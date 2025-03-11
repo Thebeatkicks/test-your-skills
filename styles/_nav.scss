@@ -1,3 +1,4 @@
+/*
 .nav-links {
     display: flex;
     list-style: none;
@@ -25,3 +26,62 @@
     color: #000000;
     transition: all 0.3s ease;
 }
+*/
+.nav {
+    overflow: hidden;
+    background-color: #5474FD;
+  }
+  
+  .nav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  
+  .nav a:hover {
+    background-color: #5474FD;
+    color: black;
+  }
+  
+  .nav a.active {
+    background-color: #5474FD;
+    color: white;
+  }
+  
+  .nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:active) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  .info {
+    padding-left: 15px;
+  }  

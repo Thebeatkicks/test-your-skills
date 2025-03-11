@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/127443c8df.js" crossorigin="anonymous"></script>
     <title>Test your skills</title>
 </head>
@@ -32,26 +33,34 @@
     </section>
 
     <section class="nav-bar">
-        <div class="content-double">
+        <div class="content-double content-width" style="justify-content: space-between;">
             <div class="content-single">
                 <h2 class="logo">BHROMAON</h2> 
             </div>
-            <div class="content-single"> 
-                <nav class="nav-bar">
-                    <ul class="nav-links">
-                            <li><a href="#" class="navbar__links">WHO WE ARE </a></li>
-                            <li><a href="#" class="navbar__links">WHAT WE DO</a></li>
-                            <li><a href="#" class="navbar__links">TRAVEL WITH US</a></li>
-                            <li><a href="#" class="navbar__links">CONTACT US</a></li>
-                    </ul>
-                </nav>
-            </div>    
+              
+            <div class="nav" id="nav-bar">
+                <a href="#home">WHO WE ARE</a>
+                <a href="#news">WHAT WE DO</a>
+                <a href="#contact">TRAVEL WITH US</a>
+                <a href="#about">CONTACT US</a>
+                <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i></a>
+            </div>
         </div>
         
     </section>
-
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+        </script>
     <section class="choose">
-        <div class="content-double">
+        <div class="content-double content-width">
             <div class="content-single left">
                 <h3 class="logo-choose">Why Choose Us</h3>
                 <p class="content-choose content-margin-top">Tion and dislike men who are so beguiled and demoralized 
