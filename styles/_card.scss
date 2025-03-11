@@ -119,6 +119,10 @@ color: #FFFFFF;
     background-color: black;
 }
 
+.button-hero:focus {
+    outline: 3px solid rgb(255, 255, 255);
+  }
+
 .button-section {
     box-sizing: border-box;
     background: #496BFE;
@@ -137,6 +141,9 @@ color: #FFFFFF;
         background-color: black;
     }
 
+.button-section:focus {
+        outline: 3px solid rgb(255, 255, 255);
+      }
 .img-top {
     margin-bottom: 5px;
 }
