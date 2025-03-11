@@ -1,0 +1,27 @@
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 35%;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar__links:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+}
