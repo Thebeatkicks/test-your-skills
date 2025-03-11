@@ -106,6 +106,7 @@ display: flex;
 align-items: center;
 text-align: center; 
 color: #FFFFFF;
+margin-bottom: 91px;
 
 
 }
@@ -119,6 +120,7 @@ color: #FFFFFF;
     align-items: center;
     text-transform: uppercase;
     color: #FEFEFE;
+    margin-bottom: 20px;
 }
 
 .testimonial-text {
@@ -131,4 +133,33 @@ display: flex;
 align-items: center;
 color: #E8E8E8;
 }
-    
+
+.logo-footer {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 26px;
+display: flex;
+align-items: center;
+letter-spacing: 3.36px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.slogan-footer {
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 1.6px;
+color: #FFFFFF;
+}
+
+i {
+    padding: 5px;
+}
