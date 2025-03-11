@@ -96,15 +96,15 @@ color: #FFFFFF;
     }
 
 nav {
-    width: 1100px;
-}
+        max-width: 1100px;
+    }
 
 .img-top {
     margin-bottom: 5px;
 }
 
 .img-bot {
-    margin-top: 5px;
+    margin-top: 5px; 
 }
 
 .start {
@@ -139,4 +139,30 @@ nav {
     align-content: center;
     padding-left: 60px;
     padding-right: 30px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid__element {
+    overflow: hidden;
+    position: relative;
+}
+
+.first {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.second {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+   
 }
