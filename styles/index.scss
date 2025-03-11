@@ -1,3 +1,11 @@
-@use "fonts"
+@use 'fonts';
 
-@
+@import 'nav'; 
+@import 'main';
+@import 'sections'; 
+@import 'card'; 
+
+body {
+    font-family: fonts.$main-font;
+    background-color: #ffff;
+}
